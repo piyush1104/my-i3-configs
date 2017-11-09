@@ -88,8 +88,11 @@ ${voffset -95}${font Ubuntu style:bold:pixelsize=10}
 ${goto 1100}${color FFA300} USED RAM/SWAP
 ${voffset 0}${offset 1105}${font Ubuntu:pixelsize=17}$color$mem/$swap ${voffset -20}${offset 40}${font Ubuntu style:bold:pixelsize=10}${color FFA300}CPU ${offset 9}${font Ubuntu:pixelsize=27}$color${cpu cpu0}%
 ${voffset 10}${offset 270}${color 2c2c2c}
- 
+${offset 900}${color asavaa}${font :pixelsize=30}Dunst Shortcuts${color 010111}${font :pixelsize=22}
+${offset 900}close      = ctrl+space
+${offset 900}close_all = ctrl+shift+space
+${offset 900}history   = ctrl+grave (grave = ~)
+${offset 900}context  = ctrl+shift+period
 ${image ~/.conky/.bg.png -p 945,300 -s 420x160}
  ${image ~/.conky/.bg2.png -p 960,450 -s 400x130}
-
 
