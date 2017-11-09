@@ -1,0 +1,95 @@
+####################################
+### Modified by www.NoobsLab.com ###
+####################################
+
+# Conky settings #
+background yes
+update_interval 1
+
+cpu_avg_samples 1
+net_avg_samples 2
+
+override_utf8_locale yes
+
+double_buffer yes
+no_buffers yes
+
+text_buffer_size 2048
+#imlib_cache_size 0
+
+temperature_unit celsius
+
+# Window specifications #
+own_window no
+own_window_type conky
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+
+border_inner_margin 0
+border_outer_margin 0
+
+
+## Adjust Accoring to yours
+
+minimum_size 500 500
+#maximum_width 500
+
+alignment tl
+gap_x 0
+gap_y 0
+
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Text settings #
+use_xft yes
+xftfont caviar dreams:size=8
+xftalpha 0.5
+
+uppercase no
+
+temperature_unit celsius
+
+
+default_color FFFFFF
+#default_shade_color 808080
+
+
+
+## Adjust these fields according to the your screen-size
+
+TEXT
+${voffset 10}${offset 310}${color 000000}${font Bitstream Charter:pixelsize=40}i3 CheatSheet
+${voffset 40}
+${color aaaaaa}${font :pixelsize=30}General${color 010111}${font :pixelsize=22}
+startx i3 ${offset 130}start i3 from command line
+$mod+<Enter> ${offset 15}open a terminal
+$mod+d ${offset 95}open dmenu (text based program launcher)
+$mod+r ${offset 100}resize mode (esc leave resize mode)
+$mod+shift+e ${offset 28}exit i3
+$mod+shift+r ${offset 28}restart i3 in place
+$mod+shift+c ${offset 28}reload config file
+$mod+shift+q ${offset 28}kill window
+${color aaaaaa}${font :pixelsize=30}Windows${color 010111}${font :pixelsize=22}
+$mod+w ${offset 90}tabbed layout
+$mod+e ${offset 90}vertical and horizontal layout (switches to and between them)
+$mod+s ${offset 95}stacked layout
+$mod+f ${offset 95}fullscreen
+${color aaaaaa}${font :pixelsize=30}Moving Windows${color 010111}${font :pixelsize=22}
+$mod+shift+<direction key>
+${color aaaaaa}${font :pixelsize=30}Custom Shortcuts${color 010111}${font :pixelsize=22}
+$mod+l 		Lockscreen
+${voffset -330}${offset 1060}${color EAEAEA}${font Bitstream Charter:pixelsize=75}${time %H:%M}${font}${voffset -84}${offset -184}${voffset 95}${font GE Inspira:pixelsize=22}${time %a},${color FFA300}${time %d} ${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %b} ${time %Y}${font}${voffset 124}${font GE Inspira:pixelsize=58}${offset 100}${font}
+${voffset -95}${font Ubuntu style:bold:pixelsize=10}
+${goto 1100}${color FFA300} USED RAM/SWAP
+${voffset 0}${offset 1105}${font Ubuntu:pixelsize=17}$color$mem/$swap ${voffset -20}${offset 40}${font Ubuntu style:bold:pixelsize=10}${color FFA300}CPU ${offset 9}${font Ubuntu:pixelsize=27}$color${cpu cpu0}%
+${voffset 10}${offset 270}${color 2c2c2c}
+ 
+${image ~/.conky/.bg.png -p 945,300 -s 420x160}
+ ${image ~/.conky/.bg2.png -p 960,450 -s 400x130}
+
+
